@@ -1,4 +1,4 @@
-/*"use strict";
+"use strict";
 
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
@@ -19,9 +19,9 @@ gulp.task("css", function () {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
-}); */
+});
 
-/*gulp.task("server", function () {
+gulp.task("server", function () {
   server.init({
     server: "source/",
     notify: false,
@@ -29,9 +29,9 @@ gulp.task("css", function () {
     cors: true,
     ui: false
   });
-*/
-//  gulp.watch("source/less/**/*.less", gulp.series("css"));
-// gulp.watch("source/*.html").on("change", server.reload);
-//});
 
-//gulp.task("start", gulp.series("css", "server"));
+  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/*.html").on("change", server.reload);
+});
+
+gulp.task("start", gulp.series("css", "server"));
