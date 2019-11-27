@@ -63,96 +63,64 @@
         <form class="filter__form" action="http://echo.htmlacademy.ru" method="get">
           <fieldset class="filter__fieldset">
             <legend class="filter__title">Представьтесь:</legend>
-            <ul class="filter__list">
-              <li class="filter__item">
-                <label class="filter__label">Имя<sup>*</sup>:
-                  <input class="field-text filter__personal" type="text" name="name" placeholder="Петр">
-                </label>
-              </li>
-              <li class="filter__item">
-                <label class="filter__label">Фамилия<sup>*</sup>:
-                  <input class="field-text filter__personal" type="text" name="surname" placeholder="Иванов">
-                </label>
-              </li>
-              <li class="filter__item">
-                <label class="filter__label">Отчество:
-                  <input class="field-text filter__personal" type="text" name="patronymic" placeholder="Александрович">
-                </label>
-              </li>
-            </ul>
+            <label class="filter__label">Имя<sup>*</sup>:
+              <input class="field-text filter__personal" type="text" name="name" placeholder="Петр">
+            </label>
+            <label class="filter__label">Фамилия<sup>*</sup>:
+              <input class="field-text filter__personal" type="text" name="surname" placeholder="Иванов">
+            </label>
+            <label class="filter__label">Отчество:
+              <input class="field-text filter__personal" type="text" name="patronymic" placeholder="Александрович">
+            </label>
           </fieldset>
 
           <fieldset class="filter__fieldset">
             <legend class="filter__title">Контактная информация:</legend>
-            <ul class="filter__list">
-              <li class="filter__item">
-                <label class="filter__label">Контактный телефон<sup>*</sup>:
-                  <input class="field-text filter__contacts" type="tel" name="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон">
-                  <span class="filter__contacts-icon">
-                    <svg>
-                      <use xlink:href="#icon-phone"></use>
-                    </svg>
-                  </span>
-                </label>
-              </li>
-              <li class="filter__item">
-                <label class="filter__label">Электронная почта<sup>*</sup>:
-                  <input class="field-text filter__contacts" type="email" name="email" placeholder="Введите e-mail">
-                  <span class="filter__contacts-icon">
-                    <svg>
-                      <use xlink:href="#icon-mail"></use>
-                    </svg>
-                  </span>
-                </label>
-              </li>
-            </ul>
+            <label class="filter__label">Контактный телефон<sup>*</sup>:
+              <input class="field-text filter__contacts" type="tel" name="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон">
+              <span class="filter__contacts-icon">
+              </span>
+            </label>
+            <label class="filter__label">Электронная почта<sup>*</sup>:
+              <input class="field-text filter__contacts" type="email" name="email" placeholder="Введите e-mail">
+              <span class="filter__contacts-icon">
+              </span>
+            </label>
           </fieldset>
 
           <fieldset class="filter__fieldset">
             <legend class="filter__title">Ваше общее впечатление:</legend>
-            <ul class="filter__list">
-              <li class="filter-option filter__item">
-                <input class="visually-hidden filter__radio" type="radio" name="impression" value="positive" id="impression-positive" checked>
-                <label class="filter__label filter__label--radio" for="impression-positive">Скорее положительное</label>
-              </li>
-              <li class="filter-option filter__item">
-                <input class="visually-hidden filter__radio" type="radio" name="impression" value="negative" id="impression-negative">
-                <label class="filter__label filter__label--radio" for="impression-negative">Скорее отрицательное</label>
-              </li>
-              <li class="filter-option filter__item">
-                <input class="visually-hidden filter__radio" type="radio" name="impression" value="not-sure" id="impression-not-sure">
-                <label class="filter__label filter__label--radio" for="impression-not-sure">Затрудняюсь ответить</label>
-              </li>
-            </ul>
+            <label class="filter__label filter__label--radio">Скорее положительное
+              <input class="visually-hidden filter__radio" type="radio" name="impression" value="positive" checked>
+            </label>
+            <label class="filter__label filter__label--radio">Скорее отрицательное
+              <input class="visually-hidden filter__radio" type="radio" name="impression" value="negative">
+            </label>
+            <label class="filter__label filter__label--radio">Затрудняюсь ответить
+              <input class="visually-hidden filter__radio" type="radio" name="impression" value="not-sure">
+            </label>
           </fieldset>
 
           <fieldset class="filter__fieldset filter-checkbox">
             <legend class="filter__title">Посещенные достопримечательности:</legend>
-            <ul class="filter__list">
-              <li class="filter-option filter__item">
-                <input class="visually-hidden filter__checkbox" type="checkbox" name="Devil's Bridge Trail" id="filter-bridge" checked>
-                <label class="filter__label filter__label--checkbox" for="filter-bridge">Мост Дьявола</label>
-              </li>
-              <li class="filter-option filter__item">
-                <input class="visually-hidden filter__checkbox" type="checkbox" name="Bell rock" id="filter-bell-rock" checked>
-                <label class="filter__label filter__label--checkbox " for="filter-bell-rock">Гора-Колокол</label>
-              </li>
-              <li class="filter-option filter__item">
-                <input class="visually-hidden filter__checkbox" type="checkbox" name="Slide Rock State Park" id="filter-slide-park" checked>
-                <label class="filter__label filter__label--checkbox" for="filter-slide-park">Слайд-парк</label>
-              </li>
-              <li class="filter-option filter__item">
-                <input class="visually-hidden filter__checkbox" type="checkbox" name="Red rock" id="filter-red-rock">
-                <label class="filter__label filter__label--checkbox" for="filter-red-rock">Красные скалы</label>
-              </li>
-            </ul>
+            <label class="filter__label filter__label--checkbox">Мост Дьявола
+              <input class="visually-hidden filter__checkbox" type="checkbox" name="Devil's Bridge Trail" checked>
+            </label>
+            <label class="filter__label filter__label--checkbox">Гора-Колокол
+              <input class="visually-hidden filter__checkbox" type="checkbox" name="Bell rock" checked>
+            </label>
+            <label class="filter__label filter__label--checkbox">Слайд-парк
+              <input class="visually-hidden filter__checkbox" type="checkbox" name="Slide Rock State Park" checked>
+            </label>
+            <label class="filter__label filter__label--checkbox">Красные скалы
+              <input class="visually-hidden filter__checkbox" type="checkbox" name="Red rock">
+            </label>
           </fieldset>
 
           <div class="filter__fieldset">
-            <label class="filter__title" for="your-emotions">
-              Опишите свои эмоции:
+            <label class="filter__title">Опишите свои эмоции:
+              <textarea class="filter__checkbox" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
-            <textarea class="filter__checkbox" id="your-emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
 
           <button class="button filter__button" type="submit">Отправить отзыв</button>
