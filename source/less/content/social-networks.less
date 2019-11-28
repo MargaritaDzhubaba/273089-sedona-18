@@ -1,0 +1,27 @@
+.social-networks {
+  list-style: none;
+}
+
+.social-networks__link {
+  display: block;
+
+  width: 46px;
+  height: 48px;
+
+  background-color: @color-main;
+
+  transition: 0.2s ease-in;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: fade(@accent-color, 30%);
+    background-color: #5496bd;
+  }
+}
+
+.social-networks__icon {
+  fill: @accent-color;
+}

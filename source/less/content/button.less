@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  width: 280px;
+  height: 58px;
+  padding: 10px;
+  vertical-align: middle;
+
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: @accent-color;
+  background-color: @color-main;
+  border: none;
+
+  transition: 0.2s ease-in;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: fade(@accent-color, 30%);
+    background-color: #5496bd;
+  }
+}
