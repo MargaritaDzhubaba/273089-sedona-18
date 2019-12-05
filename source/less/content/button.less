@@ -1,22 +1,20 @@
 .button {
   display: inline-block;
-  width: 280px;
-  height: 58px;
-  padding: 10px;
-  vertical-align: middle;
+  padding: 17px 47px;
 
   font-family: inherit;
   font-size: 21px;
-  line-height: 26px;
+  font-weight: bold;
   text-decoration: none;
-  text-align: center;
   text-transform: uppercase;
 
   color: @accent-color;
-  background-color: @color-main;
+  background-color: @main-color;
   border: none;
 
-  transition: 0.2s ease-in;
+  transition-duration: 0.2s;
+  transition-property: background-color;
+  transition-timing-function: linear;
 
   &:hover {
     background-color: #669ec0;
