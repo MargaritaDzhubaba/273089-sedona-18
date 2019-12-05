@@ -1,11 +1,11 @@
-.features {
-  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
-}
-
 .features__caption {
+  width: 255px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  padding-top: 40px;
+
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
   text-align: center;
 
   color: @text-color;
@@ -13,19 +13,27 @@
 }
 
 .features__introduction {
-  font-size: 14px;
+  width: 255px;
+  margin: 0 auto;
+
   line-height: 26px;
   text-align: center;
 
-  color: @text-color__muted;
+  color: @text-color-muted;
   background-color: @accent-color;
 }
 
+.features__figure {
+  margin: 0;
+}
+
 .features__figcaption {
+  width: 265px;
+  padding: 61px 28px 45px;
   text-align: center;
 
   color: @accent-color;
-  background-color: @color-main;
+  background-color: @main-color;
 }
 
 .features__image {
@@ -34,36 +42,48 @@
 }
 
 .features__title {
+  margin: 0;
+  margin-bottom: 20px;
+
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
 }
 
-.features__number,
 .features__description {
-  font-size: 14px;
-  line-height: 26px;
+  margin: 0;
+  margin-top: 25px;
 }
 
 .features__list {
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
   text-decoration: none;
 
-  color: @text-color__muted;
+  color: @text-color-muted;
 }
 
 .features__item {
+  padding: 32px 57px;
+
   background-color: @form-color;
   text-align: center;
 
   .features__title {
+    margin: 0;
+    margin-bottom: 15px;
+
     font-size: 18px;
     line-height: 26px;
     font-weight: bold;
 
     color: @text-color;
+  }
+
+  .features__description {
+    margin: 0;
+    margin-top: 20px;
   }
 }

@@ -1,5 +1,11 @@
 .social-networks {
   list-style: none;
+  margin-top: 41px;
+  margin-bottom: 40px;
+}
+
+.social-networks__item:not(:last-child) {
+  margin-right: 6px;
 }
 
 .social-networks__link {
@@ -8,9 +14,11 @@
   width: 46px;
   height: 48px;
 
-  background-color: @color-main;
+  background-color: @main-color;
 
-  transition: 0.2s ease-in;
+  transition-duration: 0.2s;
+  transition-property: background-color;
+  transition-timing-function: linear;
 
   &:hover {
     background-color: #669ec0;
