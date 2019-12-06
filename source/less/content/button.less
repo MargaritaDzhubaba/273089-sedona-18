@@ -1,0 +1,27 @@
+.button {
+  display: inline-block;
+  padding: 17px 47px;
+
+  font-family: inherit;
+  font-size: 21px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: @accent-color;
+  background-color: @main-color;
+  border: none;
+
+  transition-duration: 0.2s;
+  transition-property: background-color;
+  transition-timing-function: linear;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: fade(@accent-color, 30%);
+    background-color: #5496bd;
+  }
+}

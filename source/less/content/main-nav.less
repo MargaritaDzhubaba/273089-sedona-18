@@ -1,0 +1,40 @@
+.main-nav__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.main-nav__list {
+  .list-reset();
+}
+
+.main-nav__link {
+  display: block;
+
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: @main-color;
+  color: @accent-color;
+
+  box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2),
+    inset 0 1px 0 0 fade(@accent-color, 20%);
+}
+
+.main-nav__image {
+  width: 102px;
+  height: 83px;
+}
+
+.main-nav__toggle {
+  background-color: @accent-color;
+  border: none;
+}
+
+.main-nav__toggle-icon g {
+  fill: @main-color;
+}
