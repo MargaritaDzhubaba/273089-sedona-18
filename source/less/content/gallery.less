@@ -1,8 +1,25 @@
-.gallery__title {
-  width: 255px;
+.gallery__header {
+  width: 320px;
   margin: 0 auto;
+  padding: 44px 24px 33px;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__header {
+    width: 550px;
+    padding: 73px 30px 31px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery__header {
+    width: 550px;
+    padding: 112px 30px 32px;
+  }
+}
+
+.gallery__title {
   margin-bottom: 15px;
-  padding-top: 40px;
 
   font-size: 18px;
   line-height: 26px;
@@ -12,9 +29,6 @@
 }
 
 .gallery__description {
-  width: 270px;
-  margin: 0 auto;
-  padding: 15px 0 33px;
 
   line-height: 24px;
   text-align: center;

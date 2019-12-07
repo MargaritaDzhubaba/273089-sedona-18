@@ -1,13 +1,37 @@
 .post {
   margin: 0;
   padding: 22px 20px;
+
+  border-top: 1px solid #eeeeee;
 }
 
 .post__link {
   font-size: 0;
 }
 
+.post__figcaption {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__header {
+    width: 550px;
+    padding: 73px 30px 31px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery__header {
+    width: 550px;
+    padding: 112px 30px 32px;
+  }
+}
+
 .post__title {
+  width: 100%;
   margin: 0;
   padding-top: 15px;
 
@@ -18,6 +42,7 @@
 }
 
 .post__description {
+  width: 100%;
   margin: 0;
   margin-bottom: 8px;
 
@@ -28,6 +53,8 @@
 }
 
 .post__button {
+  width: 23px;
+  margin-right: 14px;
   border: none;
 }
 
@@ -39,6 +66,7 @@
 }
 
 .post__likes {
+  width: 50px;
   line-height: 24px;
   font-weight: bold;
 
