@@ -22,6 +22,25 @@
   width: 320px;
 
   background: url("../../img/bg-intro-triangle-mobile.svg") no-repeat center;
+  background-size: 102%;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome-image::before {
+    height: 57px;
+    width: 768px;
+
+    background: url("../../img/bg-intro-triangle-tablet.svg") no-repeat center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome-image::before {
+    height: 57px;
+    width: 1200px;
+
+    background: url("../../img/bg-intro-triangle-desktop.svg") no-repeat center;
+  }
 }
 
 .welcome-image__inner {
@@ -48,4 +67,22 @@
   width: 320px;
 
   background: url("../../img/bg-intro-triangle-mobile.svg") no-repeat center;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome-image__inner::before {
+    height: 57px;
+    width: 768px;
+
+    background: url("../../img/bg-intro-triangle-tablet.svg") no-repeat center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome-image__inner::before {
+    height: 57px;
+    width: 1200px;
+
+    background: url("../../img/bg-intro-triangle-desktop.svg") no-repeat center;
+  }
 }

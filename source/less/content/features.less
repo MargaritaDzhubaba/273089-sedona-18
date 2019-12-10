@@ -63,7 +63,7 @@
 }
 
 .features__figcaption {
-  width: 265px;
+  width: 320px;
   padding: 61px 28px 45px;
   text-align: center;
 
@@ -150,26 +150,11 @@
 
   background-color: @form-color;
   text-align: center;
-
-  .features__title {
-    margin: 0;
-    margin-bottom: 15px;
-
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: bold;
-
-    color: @text-color;
-  }
-
-  .features__description {
-    margin: 0;
-    margin-top: 20px;
-  }
 }
 
 @media (min-width: @tablet-width) {
   .features__item {
+    flex-grow: 1;
     width: 33.3%;
     padding: 50px 48px;
   }
@@ -178,6 +163,22 @@
 @media (min-width: @desktop-width) {
   .features__item {
     width: 33.3%;
-    padding: 50px 58px 70px;
+    padding: 50px 57px 70px;
   }
+}
+
+.features__item .features__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+
+  color: @text-color;
+}
+
+.features__item .features__description {
+  margin: 0;
+  margin-top: 20px;
 }
