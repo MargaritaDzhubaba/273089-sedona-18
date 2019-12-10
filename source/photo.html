@@ -7,9 +7,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="page-wrapper">
 
-    <header class="page-header">
-      <div class="main-nav__wrapper">
+      <header class="page-header">
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -26,7 +26,7 @@
             </li>
           </ul>
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
-            <svg class="main-nav__toggle-icon"version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+            <svg class="main-nav__toggle-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
               <g>
                 <rect width="22.928" height="3.964"/>
                 <rect y="9.009" width="22.928" height="3.964"/>
@@ -35,160 +35,161 @@
             </svg>
           </button>
         </nav>
-        <a class="main-nav__logo">
-          <img class="main-nav__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта Седона">
-        </a>
-      </div>
-    </header>
+        <div class="main-nav__wrapper">
+          <a class="main-nav__logo">
+            <img class="main-nav__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта Седона">
+          </a>
+        </div>
+      </header>
 
-    <main class="page-main">
-      <section class="welcome-image__inner">
-          <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
-          <img class="welcome-image__image" src="img/text-sedona.svg" width="281" height="214" alt="Добро пожаловать в Седону">
+      <main class="page-main">
+        <section class="welcome-image__inner">
+            <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
+            <img class="welcome-image__image" src="img/text-sedona.svg" width="281" height="214" alt="Добро пожаловать в Седону">
+          </section>
+
+        <section class="gallery">
+          <div class="gallery__header">
+            <h2 class="gallery__title">Фото и видео</h2>
+            <p class="gallery__description">
+              Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+            </p>
+          </div>
+          <div class="post__wrapper">
+            <figure class="post">
+              <a class="post__link" href="#">
+                <img class="post__image" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+              </a>
+              <figcaption class="post__figcaption">
+                <h3 class="post__title">Неродные просторы</h3>
+                <p class="post__description">Автор фото: Борис</p>
+                <button class="post__button" type="button" aria-label="Кнопка мне нравится">
+                  <svg class="post__icon">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                </button>
+                <span class="post__likes">1350</span>
+              </figcaption>
+            </figure>
+            <figure class="post">
+              <a class="post__link" href="#">
+                <img class="post__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
+              </a>
+              <figcaption class="post__figcaption">
+                <h3 class="post__title">Местная растительность</h3>
+                <p class="post__description">Автор фото: Сергей</p>
+                <button class="post__button" type="button" aria-label="Кнопка мне нравится">
+                  <svg class="post__icon">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                </button>
+                <span class="post__likes">143</span>
+              </figcaption>
+            </figure>
+            <figure class="post">
+              <a class="post__link" href="#">
+                <img class="post__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+              </a>
+              <figcaption class="post__figcaption">
+                <h3 class="post__title">Дорога на север</h3>
+                <p class="post__description">Автор фото: Петр</p>
+                <button class="post__button" type="button" aria-label="Кнопка мне нравится">
+                  <svg class="post__icon">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                </button>
+                <span class="post__likes">96</span>
+              </figcaption>
+            </figure>
+            <figure class="post">
+              <a class="post__link" href="#">
+                <img class="post__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
+              </a>
+              <figcaption class="post__figcaption">
+                <h3 class="post__title">Мост дьявола</h3>
+                <p class="post__description">Автор фото: Антон</p>
+                <button class="post__button" type="button" aria-label="Кнопка мне нравится">
+                  <svg class="post__icon">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                </button>
+                <span class="post__likes">254</span>
+              </figcaption>
+            </figure>
+          </div>
         </section>
 
-      <section class="gallery">
-        <div class="gallery__header">
-          <h2 class="gallery__title">Фото и видео</h2>
-          <p class="gallery__description">
-            Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+        <section class="presentation">
+          <div class="presentation__header">
+            <h2 class="presentation__title">Все еще сомневаетесь?</h2>
+            <p class="presentation__description">
+              Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
           </p>
-        </div>
-        <div class="wrapper">
-          <figure class="post">
-            <a class="post__link" href="#">
-              <img class="post__image" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
-            </a>
-            <figcaption class="post__figcaption">
-              <h3 class="post__title">Неродные просторы</h3>
-              <p class="post__description">Автор фото: Борис</p>
-              <button class="post__button" type="button" aria-label="Кнопка мне нравится">
-                <svg class="post__icon">
-                  <use xlink:href="#icon-like"></use>
-                </svg>
+          </div>
+          <div class="player">
+            <img class="player__image" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Видеопрезентация туристического города Седона" >
+            <form class="player__form" action="https://echo.htmlacademy.ru/courses" method="post">
+              <div class="player__range">
+                <label class="player__label">
+                  <input class="player__input" type="range" name="video_range" min="1" max="20" step="1">
+                </label>
+              </div>
+            </form>
+            <fieldset class="player__controls">
+              <button class="player__button" type="button" aria-label="Проиграть видео еще раз">
+                <!-- <svg class="player__icon">
+                  <use xlink:href="#icon-video-replay"></use>
+                </svg> -->
               </button>
-              <span class="post__likes">1350</span>
-            </figcaption>
-          </figure>
-          <figure class="post">
-            <a class="post__link" href="#">
-              <img class="post__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
-            </a>
-            <figcaption>
-              <h3 class="post__title">Местная растительность</h3>
-              <p class="post__description">Автор фото: Сергей</p>
-              <button class="post__button" type="button" aria-label="Кнопка мне нравится">
-                <svg class="post__icon">
-                  <use xlink:href="#icon-like"></use>
-                </svg>
+              <button class="player__button" type="button" aria-label="Включить субтитры">
+                <!-- <svg class="player__icon">
+                  <use xlink:href="#icon-video-subtitles"></use>
+                </svg> -->
               </button>
-              <span class="post__likes">143</span>
-            </figcaption>
-          </figure>
-          <figure class="post">
-            <a class="post__link" href="#">
-              <img class="post__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
-            </a>
-            <figcaption>
-              <h3 class="post__title">Дорога на север</h3>
-              <p class="post__description">Автор фото: Петр</p>
-              <button class="post__button" type="button" aria-label="Кнопка мне нравится">
-                <svg class="post__icon">
-                  <use xlink:href="#icon-like"></use>
-                </svg>
+              <button class="player__button" type="button" aria-label="Развернуть видео во весь экран">
+                <!-- <svg class="player__icon">
+                  <use xlink:href="#icon-video-fullscreen"></use>
+                </svg> -->
               </button>
-              <span class="post__likes">96</span>
-            </figcaption>
-          </figure>
-          <figure class="post">
-            <a class="post__link" href="#">
-              <img class="post__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
-            </a>
-            <figcaption>
-              <h3 class="post__title">Мост дьявола</h3>
-              <p class="post__description">Автор фото: Антон</p>
-              <button class="post__button" type="button" aria-label="Кнопка мне нравится">
-                <svg class="post__icon">
-                  <use xlink:href="#icon-like"></use>
-                </svg>
-              </button>
-              <span class="post__likes">254</span>
-            </figcaption>
-          </figure>
-        </div>
-      </section>
+            </fieldset>
+          </div>
+        </section>
+      </main>
 
-      <section class="presentation">
-        <div class="presentation__header">
-          <h2 class="presentation__title">Все еще сомневаетесь?</h2>
-          <p class="presentation__description">
-            Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
-        </p>
+      <footer class="page-footer">
+        <b class="page-footer__hashtag">#visitsedona</b>
+          <ul class="page-footer__social social-networks">
+            <li class="social-networks__item">
+              <a class="social-networks__link" href="#" aria-label="Мы в Twitter">
+                <!-- <svg class="social-networks__icon">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg> -->
+              </a>
+            </li>
+            <li class="social-networks__item">
+              <a class="social-networks__link" href="#" aria-label="Наша страничка в Facebook">
+                <!-- <svg class="social-networks__icon">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg> -->
+              </a>
+            </li>
+            <li class="social-networks__item">
+              <a class="social-networks__link" href="#" aria-label="Наш канал на youtube">
+                <!-- <svg class="social-networks__icon">
+                  <use xlink:href="#icon-youtube"></use>
+                </svg> -->
+              </a>
+            </li>
+          </ul>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__author">Разработано:</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
+            <!-- <svg class="copyright__icon">
+              <use xlink:href="#logo-htmlacademy"></use>
+            </svg> -->
+          </a>
         </div>
-        <div class="player">
-          <img class="player__image" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Видеопрезентация туристического города Седона" >
-          <form class="player__form" action="https://echo.htmlacademy.ru/courses" method="post">
-            <div class="player__range">
-              <label class="player__label">
-                <input class="player__input" type="range" name="video_range" min="1" max="20" step="1">
-              </label>
-            </div>
-          </form>
-          <fieldset class="player__controls">
-            <button class="player__button" type="button" aria-label="Проиграть видео еще раз">
-              <svg class="player__icon">
-                <use xlink:href="#icon-video-replay"></use>
-              </svg>
-            </button>
-            <button class="player__button" type="button" aria-label="Включить субтитры">
-              <svg class="player__icon">
-                <use xlink:href="#icon-video-subtitles"></use>
-              </svg>
-            </button>
-            <button class="player__button" type="button" aria-label="Развернуть видео во весь экран">
-              <svg class="player__icon">
-                <use xlink:href="#icon-video-fullscreen"></use>
-              </svg>
-            </button>
-          </fieldset>
-        </div>
-      </section>
-    </main>
-
-    <footer class="page-footer">
-      <b class="page-footer__hashtag">#visitsedona</b>
-        <ul class="page-footer__social social-networks">
-          <li class="social-networks__item">
-            <a class="social-networks__link" href="#" aria-label="Мы в Twitter">
-              <svg class="social-networks__icon">
-                <use xlink:href="#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-networks__item">
-            <a class="social-networks__link" href="#" aria-label="Наша страничка в Facebook">
-              <svg class="social-networks__icon">
-                <use xlink:href="#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-networks__item">
-            <a class="social-networks__link" href="#" aria-label="Наш канал на youtube">
-              <svg class="social-networks__icon">
-                <use xlink:href="#icon-youtube"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      <div class="page-footer__copyright copyright">
-        <span class="copyright__author">Разработано:</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
-          <svg class="copyright__icon">
-            <use xlink:href="#logo-htmlacademy"></use>
-          </svg>
-        </a>
-      </div>
-    </footer>
-
+      </footer>
+    </div>
   </body>
 </html>
