@@ -1,3 +1,8 @@
+.feedback {
+  width: 320px;
+  padding: 40px 22px 2px;
+}
+
 .feedback__title {
   font-size: 18px;
   line-height: 26px;
@@ -9,6 +14,103 @@
 .feedback__description {
   line-height: 24px;
   text-align: center;
+
+  color: @text-color-muted;
+}
+
+.feedback__fieldset {
+  width: 320px;
+  padding: 24px 20px;
+
+  border: none;
+}
+
+.feedback__label {
+  width: 100%;
+  margin: 0 auto 20px;
+}
+
+.feedback__radio {
+  width: 100%;
+}
+
+.feedback__radio:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.feedback__checkbox {
+  width: 100%;
+}
+
+.feedback__checkbox:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.feedback__subtitle {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+
+  color: @text-color;
+}
+
+.feedback__text {
+  margin: 0;
+  margin-right: 15px;
+
+  font-size: 14px;
+  line-height: 26px;
+  text-align: left;
+
+  color: @text-color;
+}
+
+.feedback__input {
+  width: 100%;
+  padding: 16px 20px;
+
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+
+  text-align: left;
+  color: @text-color;
+}
+
+.feedback__radio--description,
+.feedback__checkbox--description {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: left;
+  text-transform: none;
+
+  color: @text-color;
+}
+
+.feedback__subtitle--textarea {
+  margin-bottom: 21px;
+}
+
+.feedback__textarea {
+  padding: 22px 33px 22px 21px;
+
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+
+  text-align: left;
+  color: @text-color;
+}
+
+.feedback__footnote {
+  line-height: 26px;
 
   color: @text-color-muted;
 }

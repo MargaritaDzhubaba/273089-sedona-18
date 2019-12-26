@@ -5,32 +5,41 @@
 
   width: 320px;
   margin: 0 auto;
-  padding: 40px 42px;
+  padding: 34px 42px;
+  padding-bottom: 35px;
 }
 
 @media (min-width: @tablet-width) {
-  .mapresentation__headerp {
+  .presentation__header {
     width: 460px;
-    padding: 53px 30px 78px;
+    padding: 51px 20px 78px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .presentation__header {
     width: 460px;
-    padding: 57px 30px 76px;
+    padding: 70px 20px 71px;
   }
 }
 
 .presentation__title {
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 
   font-size: 18px;
   line-height: 26px;
   text-align: center;
 
   color: @text-color;
+}
+
+@media (min-width: @tablet-width) {
+  .presentation__title {
+    margin-bottom: 31px;
+
+    font-size: 30px;
+  }
 }
 
 .player__button {

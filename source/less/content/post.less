@@ -18,13 +18,14 @@
 
 @media (min-width: @desktop-width) {
   .post__wrapper {
-    padding: 60px;
+    padding: 0;
   }
 }
 
 .post {
   margin: 0;
   padding: 22px 20px;
+  padding-bottom: 15px;
 
   border-top: 1px solid #eeeeee;
 }
@@ -78,12 +79,13 @@
 }
 
 .post__image {
+  vertical-align: top;
+
   object-fit: cover;
 }
 
 @media (min-width: @tablet-width) {
   .post__image {
-    object-fit: cover;
     width: 100%;
     height: 100%;
   }
@@ -96,7 +98,7 @@
   }
 }
 
-.post__figcaption {
+.post__content {
   display: flex;
   flex-wrap: wrap;
 
@@ -104,29 +106,43 @@
 }
 
 @media (min-width: @tablet-width) {
-  .post__figcaption {
+  .post__content {
     display: flex;
 
     width: 100%;
     height: 80px;
 
     padding: 20px;
+    padding-top: 15px;
+    padding-right: 28px;
 
     background-color: @form-color;
   }
 }
 
 @media (min-width: @tablet-width) and (max-width: 1199px) {
-  .post:nth-child(2n+3) .post__figcaption {
+  .post:nth-child(2n+3) .post__content {
+    padding-right: 35px;
+
     background-color: #eaeaea;
   }
 }
 
+@media (min-width: @tablet-width) {
+  .post__content--big {
+    padding: 20px;
+    padding-top: 15px;
+    padding-right: 22px;
+  }
+}
+
 @media (min-width: @desktop-width) {
-  .post__figcaption {
+  .post__content {
     position: absolute;
     bottom: 0;
     right: 0;
+
+    padding-left: 21px;
 
     width: 100%;
     height: 80px;
@@ -163,7 +179,7 @@
 .post__description {
   width: 100%;
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 
   line-height: 24px;
   text-transform: none;
@@ -194,7 +210,7 @@
   .post__likes {
     margin-left: auto;
 
-    transform: translateY(-40px);
+    transform: translateY(-37px);
   }
 }
 
@@ -203,12 +219,14 @@
     background-color: transparent;
 
     border: none;
+
+    transform: translateY(-35px);
   }
 }
 
 .post__likes-icon {
-  width: 23px;
-  height: 21px;
+  width: 22px;
+  height: 20px;
 
   margin-right: 10px;
 
@@ -226,6 +244,7 @@
 }
 
 .post__likes-count {
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   line-height: 24px;
   font-weight: bold;
 

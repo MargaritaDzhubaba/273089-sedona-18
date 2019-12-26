@@ -61,7 +61,10 @@
   display: block;
 
   min-height: 55px;
-  padding: 15px 5px;
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 15px;
 
   font-size: 18px;
   font-weight: bold;
@@ -80,11 +83,32 @@
   .main-nav__link {
     display: block;
 
+    padding-top: 13px;
     font-size: 14px;
     background-color: @accent-color;
     color: @text-color;
 
     box-shadow: none;
+  }
+
+  .main-nav__link:hover {
+    color: @main-color;
+  }
+
+  .main-nav__link:disabled {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-nav__link--active {
+    color: #766357;
+  }
+
+  .main-nav__link--active:hover {
+    color: #604e43;
+  }
+
+  .main-nav__link--active:disabled {
+    color: rgba(118, 99, 87, 0.3);
   }
 }
 
