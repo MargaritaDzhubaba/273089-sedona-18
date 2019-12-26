@@ -20,7 +20,7 @@
                 <a class="main-nav__link" href="photo.html">Фото и видео</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link">Форма отзыва</a>
+                <a class="main-nav__link main-nav__link--active">Форма отзыва</a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="https://up.htmlacademy.ru/adaptive/18">HTML Academy</a>
@@ -45,7 +45,7 @@
       <main>
         <section class="welcome-image__inner">
           <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
-          <img class="welcome-image__image" src="img/text-sedona.svg" width="281" height="214" alt="Добро пожаловать в Седону">
+          <img class="welcome-image__image--inner" src="img/text-sedona.svg" width="281" height="214" alt="Добро пожаловать в Седону">
         </section>
 
         <section class="feedback">
@@ -55,83 +55,83 @@
           </p>
         </section>
 
-        <section class="feedback__form filter">
+        <section class="feedback__content">
           <h2 class="visually-hidden">Форма для отправки отзыва</h2>
-          <form class="filter__form" action="http://echo.htmlacademy.ru" method="get">
-            <fieldset class="filter__fieldset">
-              <legend class="filter__title">Представьтесь:</legend>
-              <label class="filter__label filter__label--text">
-                <input class="filter__text filter__text--personal" type="text" name="name" placeholder="Петр" required>
-                <span class="filter__description">Имя<sup>*</sup>:</span>
+          <form class="feedback__form" action="http://echo.htmlacademy.ru" method="get">
+            <fieldset class="feedback__fieldset">
+              <legend class="feedback__subtitle">Представьтесь:</legend>
+              <label class="feedback__label">
+                <span class="feedback__text">Имя*:</span>
+                <input class="feedback__input" type="text" name="user-name" placeholder="Петр" area-label="Введите имя" required>
               </label>
-              <label class="filter__label filter__label--text">
-                <input class="filter__text filter__text--personal" type="text" name="surname" placeholder="Иванов" required>
-                <span class="filter__description">Фамилия<sup>*</sup>:</span>
+              <label class="feedback__label">
+                <span class="feedback__text">Фамилия*:</span>
+                <input class="feedback__input" type="text" name="user-surname" placeholder="Иванов" area-label="Введите фамилию" required>
               </label>
-              <label class="filter__label filter__label--text">
-                <input class="filter__text filter__text--personal" type="text" name="patronymic" placeholder="Александрович">
-                <span class="filter__description">Отчество:</span>
-              </label>
-            </fieldset>
-
-            <fieldset class="filter__fieldset">
-              <legend class="filter__title">Контактная информация:</legend>
-              <label class="filter__label filter__label--text">Контактный телефон<sup>*</sup>:
-                <input class="filter__text filter__text--contacts" type="tel" name="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
-                <span class="filter__description filter__icon-phone">
-                </span>
-              </label>
-              <label class="filter__label filter__label--text">Электронная почта<sup>*</sup>:
-                <input class="filter__text filter__text--contacts" type="email" name="email" placeholder="Введите e-mail" required>
-                <span class="filter__description filter__icon-email">
-                </span>
+              <label class="feedback__label">
+                <span class="feedback__text">Отчество:</span>
+                <input class="feedback__input" type="text" name="user-patronymic" placeholder="Александрович" area-label="Введите отчество">
               </label>
             </fieldset>
 
-            <fieldset class="filter__fieldset">
-              <legend class="filter__title filter__title--radio">Ваше общее впечатление:</legend>
-              <label class="filter__label filter__label--radio">
-                <input class="visually-hidden filter__radio" type="radio" name="impression" value="positive" checked>
-                <span class="filter__description filter__description--radio">Скорее положительное</span>
+            <fieldset class="feedback__fieldset">
+              <legend class="feedback__subtitle">Контактная информация:</legend>
+              <label class="feedback__label">
+                <span class="feedback__text">Контактный телефон*:</span>
+                <input class="feedback__input feedback__input-сontacts" type="tel" name="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" area-label="Введите номер телефона"required>
+                <svg class="feedback-icon" width="18" height="18"></svg>
               </label>
-              <label class="filter__label filter__label--radio">
-                <input class="visually-hidden filter__radio" type="radio" name="impression" value="negative">
-                <span class="filter__description filter__description--radio">Скорее отрицательное</span>
-              </label>
-              <label class="filter__label filter__label--radio">
-                <input class="visually-hidden filter__radio" type="radio" name="impression" value="not-sure">
-                <span class="filter__description filter__description--radio">Затрудняюсь ответить</span>
+              <label class="feedback__input-text">Электронная почта*:
+                <span class="feedback__text">Электронная почта*:</span>
+                <input class="feedback__input feedback__input-сontacts" type="email" name="email" placeholder="Введите e-mail" area-label="ведите e-mail"required>
+                <svg class="feedback-icon" width="16" height="12"></svg>
               </label>
             </fieldset>
 
-            <fieldset class="filter__fieldset filter-checkbox">
-              <legend class="filter__title filter__title--checkbox">Посещенные достопримечательности:</legend>
-              <label class="filter__label filter__label--checkbox">
-                <input class="visually-hidden filter__checkbox" type="checkbox" name="Devil's Bridge Trail" checked>
-                <span class="filter__description filter__description--checkbox">Мост Дьявола</span>
+            <fieldset class="feedback__fieldset">
+              <legend class="feedback__subtitle feedback__subtitle--radio">Ваше общее впечатление:</legend>
+              <label class="feedback__radio">
+                <input class="visually-hidden" type="radio" name="impression" value="positive" checked>
+                <span class="feedback__radio--description">Скорее положительное</span>
               </label>
-              <label class="filter__label filter__title--checkbox">
-                <input class="visually-hidden filter__checkbox" type="checkbox" name="Bell rock" checked>
-                <span class="filter__description filter__description--checkbox">Гора-Колокол</span>
+              <label class="feedback__radio">
+                <input class="visually-hidden" type="radio" name="impression" value="negative">
+                <span class="feedback__radio--description">Скорее отрицательное</span>
               </label>
-              <label class="filter__label filter__title--checkbox">
-                <input class="visually-hidden filter__checkbox" type="checkbox" name="Slide Rock State Park" checked>
-                <span class="filter__description filter__description--checkbox">Слайд-парк</span>
-              </label>
-              <label class="filter__label filter__title--checkbox">
-                <input class="visually-hidden filter__checkbox" type="checkbox" name="Red rock">
-                <span class="filter__description filter__description--checkbox">Красные скалы</span>
+              <label class="feedback__radio">
+                <input class="visually-hidden" type="radio" name="impression" value="not-sure">
+                <span class="feedback__radio--description">Затрудняюсь ответить</span>
               </label>
             </fieldset>
 
-            <div class="filter__fieldset">
-              <label class="filter__title filter__title--textarea">Опишите свои эмоции:
-                <textarea class="filter__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+            <fieldset class="feedback__fieldset filter-checkbox">
+              <legend class="feedback__subtitle feedback__subtitle--checkbox">Посещенные достопримечательности:</legend>
+              <label class="feedback__checkbox">
+                <input class="visually-hidden" type="checkbox" name="Devil's Bridge Trail" checked>
+                <span class="feedback__checkbox--description">Мост Дьявола</span>
+              </label>
+              <label class="feedback__checkbox">
+                <input class="visually-hidden" type="checkbox" name="Bell rock" checked>
+                <span class="feedback__checkbox--description">Гора-Колокол</span>
+              </label>
+              <label class="feedback__checkbox">
+                <input class="visually-hidden" type="checkbox" name="Slide Rock State Park" checked>
+                <span class="feedback__checkbox--description">Слайд-парк</span>
+              </label>
+              <label class="feedback__checkbox">
+                <input class="visually-hidden" type="checkbox" name="Red rock">
+                <span class="feedback__checkbox--description">Красные скалы</span>
+              </label>
+            </fieldset>
+
+            <div class="feedback__fieldset">
+              <label class="feedback__subtitle feedback__subtitle--textarea">Опишите свои эмоции:
+                <textarea class="feedback__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
               </label>
             </div>
 
-            <button class="button filter__button" type="submit">Отправить отзыв</button>
-            <p class="filter__footnote"><sup>*</sup> — обязательные поля</p>
+            <button class="button feedback__button" type="submit">Отправить отзыв</button>
+            <small class="feedback__footnote">* — обязательные поля</small>
           </form>
         </section>
       </main>
@@ -162,7 +162,7 @@
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
-          <span class="copyright__author">Разработано:</span>
+          <span class="copyright__author">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
             <svg class="copyright__icon">
               <use xlink:href="#logo-htmlacademy"></use>
